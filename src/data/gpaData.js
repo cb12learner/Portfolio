@@ -1,0 +1,104 @@
+// Semester avgGpa = credit-hour weighted average of individual course class averages.
+// Q grades (PHYS 206 Sp23, CSCE 222, ISEN 320 Sp25) excluded per A&M grading policy.
+export const semesters = [
+  {
+    semester: "Fall 2022",
+    gpa: 3.384,
+    avgGpa: 3.220,
+    courses: [
+      { code: "CHEM 107", name: "Gen Chemistry for Engineers",       grade: "B", classAvg: 3.256, description: "General chemistry concepts applied to engineering: atomic structure, bonding, thermochemistry, and equilibrium." },
+      { code: "CHEM 117", name: "Gen Chemistry for Engineers Lab",   grade: "B", classAvg: 3.458, description: "Lab component of CHEM 107. Hands-on experiments reinforcing lecture concepts." },
+      { code: "ENGR 102", name: "Engineering Lab I – Computation",   grade: "A", classAvg: 3.042, description: "Introduction to MATLAB and Python for engineering problem-solving and data analysis." },
+      { code: "MATH 151", name: "Engineering Mathematics I",         grade: "B", classAvg: 3.013, description: "Differential calculus: limits, derivatives, and their applications in engineering contexts." },
+      { code: "PERF 228", name: "History of Electronic Music",       grade: "A", classAvg: 3.498, description: "Survey of electronic and computer music from the early 20th century to the present." },
+    ],
+  },
+  {
+    semester: "Spring 2023",
+    gpa: 3.333,
+    avgGpa: 3.198,
+    courses: [
+      { code: "ENGR 216", name: "Ex Physics Engr Lab II – Mechanics",  grade: "C", classAvg: 3.000, description: "Experimental lab reinforcing mechanics concepts through physical measurement and data analysis." },
+      { code: "FSTC 201", name: "Food Science",                        grade: "A", classAvg: 3.598, description: "Introduction to food science: composition, processing, preservation, and safety." },
+      { code: "HIST 105", name: "History of the U.S.",                 grade: "A", classAvg: 3.712, description: "Survey of American history from colonization through Reconstruction." },
+      { code: "MATH 152", name: "Engineering Mathematics II",          grade: "B", classAvg: 2.610, description: "Integral calculus and series: techniques of integration, applications, and sequences." },
+    ],
+  },
+  {
+    semester: "Fall 2023",
+    gpa: 3.411,
+    avgGpa: 2.989,
+    courses: [
+      { code: "CSCE 121", name: "Intro to Program Design & Concepts",  grade: "B", classAvg: 2.681, description: "Introduction to C++ programming: variables, control flow, functions, arrays, and OOP basics." },
+      { code: "CSCE 181", name: "Introduction to Computing",           grade: "A", classAvg: 3.988, description: "Overview of computing disciplines, career paths, and foundational CS concepts." },
+      { code: "ENDS 101", name: "Design Process",                      grade: "A", classAvg: 3.869, description: "Introduction to engineering design methodology: problem framing, ideation, prototyping, and iteration." },
+      { code: "HIST 106", name: "History of the U.S. (Post-Civil War)",grade: "B", classAvg: 2.948, description: "American history from Reconstruction through the 20th century." },
+      { code: "MATH 251", name: "Engineering Mathematics III",         grade: "B", classAvg: 2.521, description: "Multivariable calculus: partial derivatives, multiple integrals, and vector calculus." },
+      { code: "PHYS 206", name: "Newtonian Mechanics",                 grade: "A", classAvg: 2.695, description: "Classical mechanics: kinematics, Newton's laws, energy, momentum, and rotational motion." },
+    ],
+  },
+  {
+    semester: "Spring 2024",
+    gpa: 2.400,
+    avgGpa: 3.170,
+    courses: [
+      { code: "GEOS 110", name: "Disasters & Society",         grade: "C", classAvg: 3.870, description: "Natural and human-made disasters examined through geological and social science lenses." },
+      { code: "ISEN 210", name: "Fundamentals of IE Design",   grade: "B", classAvg: 3.030, description: "Introduction to ISE problem-solving: product design, DFM/DFA, cost analysis, and SolidWorks CAD." },
+      { code: "MATH 304", name: "Linear Algebra",              grade: "C", classAvg: 2.656, description: "Vectors, matrices, linear transformations, eigenvalues, and applications." },
+    ],
+  },
+  {
+    semester: "Fall 2024",
+    gpa: 3.642,
+    avgGpa: 3.011,
+    courses: [
+      { code: "ISEN 230", name: "Informatics for Industrial Engineering",  grade: "B", classAvg: 2.806, description: "Data management, SQL databases, and information systems in industrial engineering contexts." },
+      { code: "MEEN 221", name: "Statics & Particle Dynamics",            grade: "A", classAvg: 2.696, description: "Equilibrium of particles and rigid bodies, free-body diagrams, and basic dynamics." },
+      { code: "PHYS 207", name: "Electricity & Magnetism",                grade: "A", classAvg: 2.375, description: "Electric fields, Gauss's law, circuits, magnetic fields, and electromagnetic induction." },
+      { code: "PHYS 217", name: "Ex Physics Engr Lab III – Elec/Magn",   grade: "B", classAvg: 3.302, description: "Laboratory experiments in electricity and magnetism reinforcing PHYS 207." },
+      { code: "STAT 211", name: "Principles of Statistics I",             grade: "A", classAvg: 3.972, description: "Probability distributions, statistical inference, confidence intervals, and hypothesis testing." },
+    ],
+  },
+  {
+    semester: "Spring 2025",
+    gpa: 3.000,
+    avgGpa: 2.897,
+    courses: [
+      { code: "ISEN 281", name: "Essentials of Modern Manufacturing Methods", grade: "B", classAvg: 3.409, description: "Manufacturing processes: machining, injection molding, casting, joining, and process selection." },
+      { code: "ISEN 310", name: "Uncertainty Modeling for IE",                grade: "C", classAvg: 2.333, description: "Probability models, stochastic processes, and uncertainty quantification in industrial systems." },
+      { code: "MATH 308", name: "Differential Equations",                     grade: "A", classAvg: 2.949, description: "Ordinary differential equations: first and second order methods, systems, and Laplace transforms." },
+    ],
+  },
+  {
+    semester: "Summer 2025",
+    gpa: 4.000,
+    avgGpa: 3.342,
+    courses: [
+      { code: "BAEN 320", name: "Engineering Thermodynamics", grade: "A", classAvg: 3.433, description: "Laws of thermodynamics, energy analysis of systems, power cycles, and refrigeration." },
+      { code: "MATH 411", name: "Mathematical Probability",   grade: "A", classAvg: 2.812, description: "Rigorous probability theory: random variables, distributions, expectation, and limit theorems." },
+      { code: "MGMT 309", name: "Survey of Management",       grade: "A", classAvg: 3.781, description: "Fundamentals of business management: planning, organizing, leading, and controlling." },
+    ],
+  },
+  {
+    semester: "Fall 2025",
+    gpa: 3.500,
+    avgGpa: 3.005,
+    courses: [
+      { code: "ISEN 320", name: "Operations Research I",   grade: "B", classAvg: 2.457, description: "Linear programming, simplex method, sensitivity analysis, transportation and assignment models." },
+      { code: "ISEN 330", name: "Human Systems Interaction",grade: "B", classAvg: 3.325, description: "Ergonomics, human factors, cognitive workload, and human-machine system design." },
+      { code: "ISEN 350", name: "Quality Engineering",     grade: "A", classAvg: 2.952, description: "Statistical process control, control charts, process capability, Six Sigma, and acceptance sampling." },
+      { code: "MSEN 222", name: "Materials Science",       grade: "A", classAvg: 3.286, description: "Structure-property relationships in metals, polymers, ceramics, and composites." },
+    ],
+  },
+  {
+    semester: "Spring 2026",
+    gpa: 3.750,
+    avgGpa: 2.982,
+    courses: [
+      { code: "ISEN 340", name: "Operations Research II",          grade: "A", classAvg: 2.739, description: "Integer programming, network flows, dynamic programming, and advanced optimization techniques." },
+      { code: "ISEN 355", name: "System Simulation",               grade: "A", classAvg: 2.609, description: "Discrete-event simulation using Simio: model building, verification, validation, and output analysis." },
+      { code: "ISEN 370", name: "Production Systems Engineering",  grade: "A", classAvg: 3.260, description: "Facility layout, aggregate planning, MRP, scheduling, and lean production systems." },
+      { code: "ISEN 410", name: "Advanced Engineering Economy",    grade: "B", classAvg: 3.318, description: "Capital investment analysis, after-tax cash flows, risk and uncertainty, and financial decision-making." },
+    ],
+  },
+];

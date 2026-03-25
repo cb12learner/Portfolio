@@ -1,0 +1,126 @@
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.meta {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.description {
+  font-size: 0.97rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+/* Status badge */
+.badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+
+.badgeActive {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badgeIdle {
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.badgeDone {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+/* Progress bar */
+.progressTrack {
+  width: 100%;
+  height: 6px;
+  background: var(--border);
+  border-radius: 99px;
+  margin: 8px 0 14px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 99px;
+  transition: width 0.4s ease;
+}
+
+/* Phases */
+.phases {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.phase {
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+}
+
+.phaseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.phaseLabel {
+  font-weight: 600;
+  font-size: 0.97rem;
+}
+
+.phaseSummary {
+  font-size: 0.93rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+.deliverables {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.delivLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 4px;
+}
+
+.delivItem {
+  font-size: 0.82rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 3px 10px;
+  border-radius: 99px;
+}
