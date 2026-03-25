@@ -1,9 +1,7 @@
-import GPAChart from '../components/GPAChart'
 import styles from './Home.module.css'
 
 const skills = [
-  'Python', 'SQL', 'PostgreSQL', 'React', 'TypeScript',
-  'Simio', 'Minitab', 'Excel / VBA', 'SolidWorks', 'Six Sigma',
+  'Python', 'SQL', 'Simio / Simulation', 'Minitab', 'Excel / VBA', 'SolidWorks', 'Six Sigma', 'Lean',
 ]
 
 export default function Home() {
@@ -25,11 +23,6 @@ export default function Home() {
         <a className={styles.resumeBtn} href="/resume.pdf" download>
           Download Resume ↓
         </a>
-      </section>
-
-      {/* GPA Chart */}
-      <section className={`card ${styles.chartCard}`}>
-        <GPAChart />
       </section>
 
       {/* Skills */}

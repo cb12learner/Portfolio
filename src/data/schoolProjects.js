@@ -120,32 +120,4 @@ export const schoolProjects = [
     ],
     charts: [],
   },
-  {
-    id: "product-development",
-    title: "Cell Phone Holder – Product Design & Cost Analysis",
-    course: "ISEN 210 – Fundamentals of IE Design",
-    semester: "Spring 2024",
-    labReport: null,
-    summary:
-      "Conducted market research to develop customer specifications for a consumer cell phone holder. Applied DFM/DFA principles to drive design decisions that minimize part count, assembly complexity, and manufacturing cost. Completed a full cost analysis and produced the final design in SolidWorks, balancing manufacturability with customer requirements.",
-    results: [
-      "Customer spec sheet derived from structured market research and QFD methodology",
-      "DFM/DFA review reduced part count and eliminated 2 assembly steps",
-      "Cost analysis informed material and process selection across three design alternatives",
-    ],
-    charts: [
-      {
-        type: "cost",
-        title: "Unit Cost Breakdown ($/unit)",
-        description: "Illustrative cost model across five cost categories for the final design alternative.",
-        data: [
-          { category: "Direct Material",  cost: 2.84 },
-          { category: "Direct Labor",     cost: 1.20 },
-          { category: "Tooling (amort.)", cost: 0.65 },
-          { category: "Overhead",         cost: 0.91 },
-          { category: "Packaging",        cost: 0.38 },
-        ],
-      },
-    ],
-  },
 ]

@@ -12,7 +12,7 @@ const recommenders = [
     name: 'TBD',
     title: 'Supervisor',
     department: 'Operations & Analytics',
-    institution: 'Internship — Summer 2024',
+    institution: 'Professional — Summer 2024',
     relationship: 'Direct manager',
   },
 ]

@@ -5,6 +5,8 @@ export const semesters = [
     semester: "Fall 2022",
     gpa: 3.384,
     avgGpa: 3.220,
+    gpaHours: 13,
+    qualityPoints: 44,
     courses: [
       { code: "CHEM 107", name: "Gen Chemistry for Engineers",       grade: "B", classAvg: 3.256, description: "General chemistry concepts applied to engineering: atomic structure, bonding, thermochemistry, and equilibrium." },
       { code: "CHEM 117", name: "Gen Chemistry for Engineers Lab",   grade: "B", classAvg: 3.458, description: "Lab component of CHEM 107. Hands-on experiments reinforcing lecture concepts." },
@@ -17,6 +19,8 @@ export const semesters = [
     semester: "Spring 2023",
     gpa: 3.333,
     avgGpa: 3.198,
+    gpaHours: 12,
+    qualityPoints: 40,
     courses: [
       { code: "ENGR 216", name: "Ex Physics Engr Lab II – Mechanics",  grade: "C", classAvg: 3.000, description: "Experimental lab reinforcing mechanics concepts through physical measurement and data analysis." },
       { code: "FSTC 201", name: "Food Science",                        grade: "A", classAvg: 3.598, description: "Introduction to food science: composition, processing, preservation, and safety." },
@@ -28,6 +32,8 @@ export const semesters = [
     semester: "Fall 2023",
     gpa: 3.411,
     avgGpa: 2.989,
+    gpaHours: 17,
+    qualityPoints: 58,
     courses: [
       { code: "CSCE 121", name: "Intro to Program Design & Concepts",  grade: "B", classAvg: 2.681, description: "Introduction to C++ programming: variables, control flow, functions, arrays, and OOP basics." },
       { code: "CSCE 181", name: "Introduction to Computing",           grade: "A", classAvg: 3.988, description: "Overview of computing disciplines, career paths, and foundational CS concepts." },
@@ -41,6 +47,8 @@ export const semesters = [
     semester: "Spring 2024",
     gpa: 2.400,
     avgGpa: 3.170,
+    gpaHours: 10,
+    qualityPoints: 24,
     courses: [
       { code: "GEOS 110", name: "Disasters & Society",         grade: "C", classAvg: 3.870, description: "Natural and human-made disasters examined through geological and social science lenses." },
       { code: "ISEN 210", name: "Fundamentals of IE Design",   grade: "B", classAvg: 3.030, description: "Introduction to ISE problem-solving: product design, DFM/DFA, cost analysis, and SolidWorks CAD." },
@@ -51,6 +59,8 @@ export const semesters = [
     semester: "Fall 2024",
     gpa: 3.642,
     avgGpa: 3.011,
+    gpaHours: 14,
+    qualityPoints: 51,
     courses: [
       { code: "ISEN 230", name: "Informatics for Industrial Engineering",  grade: "B", classAvg: 2.806, description: "Data management, SQL databases, and information systems in industrial engineering contexts." },
       { code: "MEEN 221", name: "Statics & Particle Dynamics",            grade: "A", classAvg: 2.696, description: "Equilibrium of particles and rigid bodies, free-body diagrams, and basic dynamics." },
@@ -63,6 +73,8 @@ export const semesters = [
     semester: "Spring 2025",
     gpa: 3.000,
     avgGpa: 2.897,
+    gpaHours: 9,
+    qualityPoints: 27,
     courses: [
       { code: "ISEN 281", name: "Essentials of Modern Manufacturing Methods", grade: "B", classAvg: 3.409, description: "Manufacturing processes: machining, injection molding, casting, joining, and process selection." },
       { code: "ISEN 310", name: "Uncertainty Modeling for IE",                grade: "C", classAvg: 2.333, description: "Probability models, stochastic processes, and uncertainty quantification in industrial systems." },
@@ -73,6 +85,8 @@ export const semesters = [
     semester: "Summer 2025",
     gpa: 4.000,
     avgGpa: 3.342,
+    gpaHours: 9,
+    qualityPoints: 36,
     courses: [
       { code: "BAEN 320", name: "Engineering Thermodynamics", grade: "A", classAvg: 3.433, description: "Laws of thermodynamics, energy analysis of systems, power cycles, and refrigeration." },
       { code: "MATH 411", name: "Mathematical Probability",   grade: "A", classAvg: 2.812, description: "Rigorous probability theory: random variables, distributions, expectation, and limit theorems." },
@@ -83,6 +97,8 @@ export const semesters = [
     semester: "Fall 2025",
     gpa: 3.500,
     avgGpa: 3.005,
+    gpaHours: 12,
+    qualityPoints: 42,
     courses: [
       { code: "ISEN 320", name: "Operations Research I",   grade: "B", classAvg: 2.457, description: "Linear programming, simplex method, sensitivity analysis, transportation and assignment models." },
       { code: "ISEN 330", name: "Human Systems Interaction",grade: "B", classAvg: 3.325, description: "Ergonomics, human factors, cognitive workload, and human-machine system design." },
@@ -94,6 +110,8 @@ export const semesters = [
     semester: "Spring 2026",
     gpa: 3.750,
     avgGpa: 2.880,
+    gpaHours: 12,
+    qualityPoints: 48,
     courses: [
       { code: "ISEN 340", name: "Operations Research II",          grade: "A", classAvg: 2.739, description: "Integer programming, network flows, dynamic programming, and advanced optimization techniques." },
       { code: "ISEN 355", name: "System Simulation",               grade: "A", classAvg: 2.609, description: "Discrete-event simulation using Simio: model building, verification, validation, and output analysis." },

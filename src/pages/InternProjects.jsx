@@ -86,7 +86,7 @@ function ChartRenderer({ chart }) {
 export default function InternProjects() {
   return (
     <div className="page-container">
-      <h1 className="page-title">Internship Projects</h1>
+      <h1 className="page-title">Professional Projects</h1>
       <p className="page-subtitle">
         Data science and operations work from two summers of industry experience.
       </p>
