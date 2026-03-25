@@ -93,12 +93,12 @@ export const semesters = [
   {
     semester: "Spring 2026",
     gpa: 3.750,
-    avgGpa: 2.982,
+    avgGpa: 2.880,
     courses: [
       { code: "ISEN 340", name: "Operations Research II",          grade: "A", classAvg: 2.739, description: "Integer programming, network flows, dynamic programming, and advanced optimization techniques." },
       { code: "ISEN 355", name: "System Simulation",               grade: "A", classAvg: 2.609, description: "Discrete-event simulation using Simio: model building, verification, validation, and output analysis." },
       { code: "ISEN 370", name: "Production Systems Engineering",  grade: "A", classAvg: 3.260, description: "Facility layout, aggregate planning, MRP, scheduling, and lean production systems." },
-      { code: "ISEN 410", name: "Advanced Engineering Economy",    grade: "B", classAvg: 3.318, description: "Capital investment analysis, after-tax cash flows, risk and uncertainty, and financial decision-making." },
+      { code: "ISEN 410", name: "Advanced Engineering Economy",    grade: "B", classAvg: 2.911, description: "Capital investment analysis, after-tax cash flows, risk and uncertainty, and financial decision-making." },
     ],
   },
 ];
