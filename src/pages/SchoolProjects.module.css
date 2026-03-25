@@ -63,9 +63,24 @@
   margin-bottom: 4px;
 }
 
+.charts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .chartBlock {
   background: var(--bg-subtle);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 16px;
+}
+
+.panelLabel {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
 }
