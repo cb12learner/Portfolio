@@ -124,3 +124,9 @@
   padding: 3px 10px;
   border-radius: 99px;
 }
+
+.message {
+  margin-top: 14px;
+  font-size: 0.97rem;
+  color: var(--text-muted);
+}

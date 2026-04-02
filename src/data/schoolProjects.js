@@ -106,6 +106,30 @@ export const schoolProjects = [
     ],
   },
   {
+    id: "packaging-simulation",
+    title: "Packaging & Distribution System Simulation",
+    course: "ISEN 355 – System Simulation",
+    semester: "Spring 2026",
+    labReport: null,
+    summary:
+      "Built a discrete-event simulation of a 24/7 packaging and distribution facility using Simio. Items arrive via a Poisson process at 300 items/day and travel a conveyor to a single packaging station. After packaging, items route to either a domestic outgoing dock or one of two international processing clerks with different service speeds. The model captures stochastic arrivals, variable service times, and shared queue contention for international resources.",
+    results: [
+      "Domestic Product Cycle Time: 38.10 min",
+      "International Product Cycle Time: 89.37 min",
+      "Domestic Throughput: 156.3 items/day",
+      "International Throughput: 144.2 items/day",
+      "WIP: 13.08 items",
+    ],
+    charts: [
+      {
+        type: "video",
+        title: "Simulation Recording",
+        description: "Screen recording of the Simio model running at steady state.",
+        src: "/Recording 2026-04-02 172732.mp4",
+      },
+    ],
+  },
+  {
     id: "lab4-statistics",
     title: "Descriptive Statistics, Probability, and the Central Limit Theorem",
     course: "ISEN 350 – Quality Engineering",

@@ -3,10 +3,8 @@ import styles from './Navbar.module.css'
 
 const links = [
   { to: '/', label: 'Home' },
-  { to: '/intern', label: 'Professional Projects' },
   { to: '/school', label: 'School Projects' },
   { to: '/personal', label: 'Personal Projects' },
-  { to: '/letters', label: 'Letters of Rec' },
 ]
 
 export default function Navbar() {

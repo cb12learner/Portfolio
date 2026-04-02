@@ -13,7 +13,7 @@ export default function Home() {
         <h1 className={styles.name}>Caden Burnett</h1>
         <p className={styles.tagline}>
           Industrial & Systems Engineering · Texas A&M University · Class of December 2026
-          &nbsp;·&nbsp; Minor: Computer Science, Mathematics, Management
+          &nbsp;·&nbsp; Minor: Computer Science, Management
         </p>
         <p className={styles.bio}>
           I use data, simulation, and process engineering to find the inefficiency in a system and

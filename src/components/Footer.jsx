@@ -6,8 +6,7 @@ export default function Footer() {
       <div className={styles.inner}>
         <span>Caden Burnett · Texas A&M ISEN · Class of December 2026</span>
         <span className={styles.links}>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="mailto:cadenburt7@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/caden-burnett-67039524b/" target="_blank" rel="noreferrer">LinkedIn</a>
         </span>
       </div>
     </footer>

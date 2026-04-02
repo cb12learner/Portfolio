@@ -165,21 +165,29 @@ function CostChart({ chart }) {
   )
 }
 
+function VideoBlock({ chart }) {
+  return (
+    <div className={styles.chartBlock}>
+      <p className="chart-label">{chart.title}</p>
+      <p className="chart-desc">{chart.description}</p>
+      <video src={chart.src} controls style={{ width: '100%', borderRadius: '8px', marginTop: '8px' }} />
+    </div>
+  )
+}
+
 function ChartRenderer({ chart }) {
   if (chart.type === 'pareto-cumulative') return <ParetoWithCumulative chart={chart} />
   if (chart.type === 'imr') return <IMRChart chart={chart} />
   if (chart.type === 'xbar') return <XbarChart chart={chart} />
   if (chart.type === 'cost') return <CostChart chart={chart} />
+  if (chart.type === 'video') return <VideoBlock chart={chart} />
   return null
 }
 
 export default function SchoolProjects() {
   return (
     <div className="page-container">
-      <h1 className="page-title">School Projects</h1>
-      <p className="page-subtitle">
-        Academic work in quality engineering and product design.
-      </p>
+      <h1 className="page-title" style={{ marginBottom: '28px' }}>School Projects</h1>
 
       {schoolProjects.map((project) => (
         <div key={project.id} className="card">
@@ -188,12 +196,10 @@ export default function SchoolProjects() {
               <h2 className={styles.title}>{project.title}</h2>
               <p className={styles.meta}>{project.course} · {project.semester}</p>
             </div>
-            {project.labReport ? (
+            {project.labReport && (
               <a className={styles.reportBtn} href={project.labReport} target="_blank" rel="noreferrer">
                 View Report ↗
               </a>
-            ) : (
-              <span className={styles.reportPlaceholder}>Report coming soon</span>
             )}
           </div>
 
