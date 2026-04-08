@@ -118,3 +118,23 @@
   color: var(--text-muted);
   line-height: 1.55;
 }
+
+@media (max-width: 600px) {
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .nameRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .bio {
+    max-width: 100%;
+  }
+}

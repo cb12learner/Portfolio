@@ -121,3 +121,17 @@ h1, h2, h3, h4 {
   color: var(--text-muted);
   margin-bottom: 16px;
 }
+
+@media (max-width: 600px) {
+  .page-container {
+    padding: 28px 16px 60px;
+  }
+
+  .page-title {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}

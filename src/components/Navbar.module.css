@@ -59,3 +59,15 @@
   color: var(--accent);
   background: var(--accent-light);
 }
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 0 16px;
+    gap: 12px;
+  }
+
+  .link {
+    padding: 6px 8px;
+    font-size: 0.85rem;
+  }
+}

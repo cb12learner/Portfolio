@@ -116,3 +116,13 @@
   color: rgba(255, 255, 255, 0.85);
   font-weight: 500;
 }
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .chartBlock {
+    padding: 12px;
+  }
+}
