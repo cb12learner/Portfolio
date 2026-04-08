@@ -18,6 +18,12 @@
   gap: 24px;
 }
 
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .name {
   font-weight: 700;
   font-size: 1rem;
@@ -59,6 +65,23 @@
 .active:hover {
   color: var(--accent);
   background: var(--accent-light);
+}
+
+.resumeBtn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius);
+  transition: opacity 0.15s;
+  white-space: nowrap;
+}
+
+.resumeBtn:hover {
+  opacity: 0.85;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {

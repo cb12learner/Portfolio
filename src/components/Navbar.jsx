@@ -13,7 +13,10 @@ export default function Navbar() {
     <header className={styles.header}>
       <nav className={styles.nav}>
         {location.pathname !== '/' && (
-          <span className={styles.name}>Caden Burnett</span>
+          <div className={styles.left}>
+            <span className={styles.name}>Caden Burnett</span>
+            <a href="/resume.pdf" download className={styles.resumeBtn}>Resume ↓</a>
+          </div>
         )}
         <ul className={styles.links}>
           {links.map(({ to, label }) => (
