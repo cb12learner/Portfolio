@@ -1,3 +1,4 @@
+import { useState, useRef } from 'react'
 import {
   ResponsiveContainer, ComposedChart, BarChart, Bar, LineChart, Line,
   XAxis, YAxis, CartesianGrid, Tooltip, Legend, ReferenceLine,
@@ -166,11 +167,33 @@ function CostChart({ chart }) {
 }
 
 function VideoBlock({ chart }) {
+  const [started, setStarted] = useState(false)
+  const videoRef = useRef(null)
+
+  const handlePlay = () => {
+    setStarted(true)
+    videoRef.current?.play()
+  }
+
   return (
     <div className={styles.chartBlock}>
       <p className="chart-label">{chart.title}</p>
       <p className="chart-desc">{chart.description}</p>
-      <video src={chart.src} controls style={{ width: '100%', borderRadius: '8px', marginTop: '8px' }} />
+      <div className={styles.videoWrapper}>
+        <video
+          ref={videoRef}
+          src={chart.src}
+          controls
+          loop
+          style={{ width: '100%', borderRadius: '8px', display: 'block' }}
+        />
+        {!started && (
+          <div className={styles.videoOverlay} onClick={handlePlay}>
+            <div className={styles.playBtn}>▶</div>
+            <p className={styles.playLabel}>Click to play</p>
+          </div>
+        )}
+      </div>
     </div>
   )
 }
@@ -187,7 +210,7 @@ function ChartRenderer({ chart }) {
 export default function SchoolProjects() {
   return (
     <div className="page-container">
-      <h1 className="page-title" style={{ marginBottom: '28px' }}>School Projects</h1>
+      <h1 className="page-title" style={{ marginBottom: '28px' }}>Projects</h1>
 
       {schoolProjects.map((project) => (
         <div key={project.id} className="card">
@@ -205,13 +228,6 @@ export default function SchoolProjects() {
 
           <p className={styles.summary}>{project.summary}</p>
 
-          <div className={styles.results}>
-            <p className={styles.resultsLabel}>Key Results</p>
-            <ul className="results-list">
-              {project.results.map((r, i) => <li key={i}>{r}</li>)}
-            </ul>
-          </div>
-
           {project.charts.length > 0 && (
             <div className={styles.charts}>
               {project.charts.map((chart, i) => (
@@ -219,6 +235,13 @@ export default function SchoolProjects() {
               ))}
             </div>
           )}
+
+          <div className={styles.results}>
+            <p className={styles.resultsLabel}>Key Results</p>
+            <ul className="results-list">
+              {project.results.map((r, i) => <li key={i}>{r}</li>)}
+            </ul>
+          </div>
         </div>
       ))}
     </div>

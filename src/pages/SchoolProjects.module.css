@@ -84,3 +84,35 @@
   color: var(--text-muted);
   margin-bottom: 6px;
 }
+
+.videoWrapper {
+  position: relative;
+  margin-top: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.videoOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.playBtn {
+  font-size: 2.5rem;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.playLabel {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+}
