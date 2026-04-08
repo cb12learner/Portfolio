@@ -56,7 +56,7 @@ export default function Home() {
         <h2 className={styles.skillsTitle}>Projects</h2>
         <div className={styles.projectGrid}>
           {schoolProjects.map((p) => (
-            <Link key={p.id} to="/projects" className={styles.projectCard}>
+            <Link key={p.id} to={`/projects#${p.id}`} className={styles.projectCard}>
               <p className={styles.projectCardTitle}>{p.title}</p>
               <p className={styles.projectCardSummary}>{p.summary.split('. ')[0]}.</p>
             </Link>

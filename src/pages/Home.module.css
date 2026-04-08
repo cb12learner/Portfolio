@@ -23,13 +23,13 @@
   font-weight: 600;
   font-size: 0.9rem;
   padding: 10px 22px;
-  border-radius: 8px;
+  border-radius: var(--radius);
   transition: opacity 0.15s;
   white-space: nowrap;
 }
 
 .resumeBtn:hover {
-  opacity: 0.88;
+  opacity: 0.85;
   text-decoration: none;
 }
 
@@ -49,7 +49,7 @@
 
 .tagline {
   color: var(--accent);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.95rem;
   margin-bottom: 14px;
   line-height: 1.6;

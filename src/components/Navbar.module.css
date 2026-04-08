@@ -31,6 +31,7 @@
   align-items: center;
   gap: 4px;
   flex-wrap: wrap;
+  margin-left: auto;
 }
 
 .link {

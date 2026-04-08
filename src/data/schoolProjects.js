@@ -1,7 +1,7 @@
 export const schoolProjects = [
   {
     id: "lab5-benchmark",
-    title: "Mouse Factory Benchmark Analysis",
+    title: "Manufacturing Facility Production Analysis",
     course: "ISEN 350 – Quality Engineering",
     semester: "Fall 2025",
     labReport: "/ISEN350_Lab5.pdf",
@@ -33,7 +33,7 @@ export const schoolProjects = [
   },
   {
     id: "lab7-spc",
-    title: "SPC Phase 2: Button-Hole Diameter Control Chart",
+    title: "Control Chart Implementation Analysis",
     course: "ISEN 350 – Quality Engineering",
     semester: "Fall 2025",
     labReport: "/ISEN350_Lab7.pdf",

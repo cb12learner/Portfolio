@@ -51,6 +51,7 @@
 }
 
 .results {
+  margin-top: 24px;
   margin-bottom: 24px;
 }
 
@@ -70,10 +71,18 @@
 }
 
 .chartBlock {
-  background: var(--bg-subtle);
-  border: 1px solid var(--border);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 8px;
   padding: 16px;
+  /* Restore light-theme variables so Recharts SVG elements inherit them */
+  --accent: #1a56db;
+  --accent-light: #e8f0fe;
+  --text: #111827;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --bg: #ffffff;
+  --bg-subtle: #f9fafb;
 }
 
 .panelLabel {
@@ -83,6 +92,12 @@
   letter-spacing: 0.05em;
   color: var(--text-muted);
   margin-bottom: 6px;
+}
+
+.videoBlock {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
 }
 
 .videoWrapper {

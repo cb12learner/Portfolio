@@ -1,4 +1,5 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import {
   ResponsiveContainer, ComposedChart, BarChart, Bar, LineChart, Line,
   XAxis, YAxis, CartesianGrid, Tooltip, Legend, ReferenceLine,
@@ -176,7 +177,7 @@ function VideoBlock({ chart }) {
   }
 
   return (
-    <div className={styles.chartBlock}>
+    <div className={styles.videoBlock}>
       <p className="chart-label">{chart.title}</p>
       <p className="chart-desc">{chart.description}</p>
       <div className={styles.videoWrapper}>
@@ -185,6 +186,7 @@ function VideoBlock({ chart }) {
           src={chart.src}
           controls
           loop
+          preload="metadata"
           style={{ width: '100%', borderRadius: '8px', display: 'block' }}
         />
         {!started && (
@@ -208,12 +210,21 @@ function ChartRenderer({ chart }) {
 }
 
 export default function SchoolProjects() {
+  const { hash } = useLocation()
+
+  useEffect(() => {
+    if (hash) {
+      const el = document.querySelector(hash)
+      if (el) el.scrollIntoView({ behavior: 'smooth' })
+    }
+  }, [hash])
+
   return (
     <div className="page-container">
       <h1 className="page-title" style={{ marginBottom: '28px' }}>Projects</h1>
 
       {schoolProjects.map((project) => (
-        <div key={project.id} className="card">
+        <div key={project.id} id={project.id} className="card">
           <div className={styles.header}>
             <div>
               <h2 className={styles.title}>{project.title}</h2>
