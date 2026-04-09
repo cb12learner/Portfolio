@@ -3,7 +3,9 @@ import { schoolProjects } from '../data/schoolProjects'
 import styles from './Home.module.css'
 
 const skills = [
-  'Python', 'SQL', 'Simio / Simulation', 'Minitab', 'Excel / VBA', 'SolidWorks', 'Six Sigma', 'Lean',
+  'Lean', 'Six Sigma', 'SQL', 'VBA', 'Python', 'Minitab',
+  'Simulation', 'SolidWorks', 'CNC Machining',
+  'Production Planning', 'Inventory Control', 'Engineering Project Cost Analysis',
 ]
 
 export default function Home() {
@@ -14,7 +16,7 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.nameRow}>
           <h1 className={styles.name}>Caden Burnett</h1>
-          <a className={styles.resumeBtn} href="/resume.pdf" download>Download Resume ↓</a>
+          <a className={styles.resumeBtn} href="/Caden Burnett Resume.pdf" download>Download Resume ↓</a>
         </div>
 
         <a

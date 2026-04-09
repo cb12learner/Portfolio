@@ -15,7 +15,7 @@ export default function Navbar() {
         {location.pathname !== '/' && (
           <div className={styles.left}>
             <span className={styles.name}>Caden Burnett</span>
-            <a href="/resume.pdf" download className={styles.resumeBtn}>Resume ↓</a>
+            <a href="/Caden Burnett Resume.pdf" download className={styles.resumeBtn}>Resume ↓</a>
           </div>
         )}
         <ul className={styles.links}>
