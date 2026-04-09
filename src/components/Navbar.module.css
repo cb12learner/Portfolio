@@ -94,4 +94,13 @@
     padding: 6px 8px;
     font-size: 0.85rem;
   }
+
+  .left {
+    gap: 8px;
+  }
+
+  .resumeBtn {
+    font-size: 0.78rem;
+    padding: 5px 10px;
+  }
 }
