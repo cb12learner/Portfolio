@@ -4,8 +4,8 @@ import styles from './Home.module.css'
 
 const skills = [
   'Lean', 'Six Sigma', 'SQL', 'VBA', 'Python', 'Excel', 'Minitab',
-  'Simio', 'Process Simulation', 'SolidWorks', 'CNC Machining',
-  'Production Planning', 'Inventory Control', 'Engineering Project Cost Analysis',
+  'Simio', 'SolidWorks', 'Process Simulation', 'Engineering Project Cost Analysis',
+  'CNC Machining', 'Production Planning', 'Inventory Control',
 ]
 
 export default function Home() {
