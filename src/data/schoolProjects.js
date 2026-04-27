@@ -130,6 +130,29 @@ export const schoolProjects = [
     ],
   },
   {
+    id: "lab8-zipline",
+    title: "Zip Line Operation Simulation",
+    course: "ISEN 355 – System Simulation",
+    semester: "Spring 2026",
+    labReport: "/Lab08.pdf",
+    summary:
+      "Built a Simio simulation of a zip line outfitter operating from 9AM to 3PM during peak tourist season. Tourists arrive in groups at an average rate of 5 per hour, with group sizes uniformly distributed from 1 to 7. Every 30 minutes starting at 9:30, an 8-minute safety video is shown in a room capped at 15 people. After the video, customers walk 10–15 minutes to the zip line, which takes 6 minutes to complete with a mandatory 3-minute safety gap between riders. Separate morning and afternoon arrival sinks tracked wait time differences across 250 replications.",
+    results: [
+      "Morning arrivals tracked separately from afternoon arrivals to capture empty-system advantage",
+      "Average group size watching the safety video measured across all non-zero groups",
+      "Zip line operation time measured from open until last customer exits (≥ 6 hours)",
+      "250-day replication run used to estimate all output metrics with confidence intervals",
+    ],
+    charts: [
+      {
+        type: "video",
+        title: "Simulation Recording",
+        description: "Screen recording of the Simio zip line model running at steady state.",
+        src: "/Lab8 Recording.mp4",
+      },
+    ],
+  },
+  {
     id: "lab4-statistics",
     title: "Descriptive Statistics, Probability, and the Central Limit Theorem",
     course: "ISEN 350 – Quality Engineering",

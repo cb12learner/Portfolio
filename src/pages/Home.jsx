@@ -3,8 +3,8 @@ import { schoolProjects } from '../data/schoolProjects'
 import styles from './Home.module.css'
 
 const skills = [
-  'Lean', 'Six Sigma', 'SQL', 'VBA', 'Python', 'Minitab',
-  'Simulation', 'SolidWorks', 'CNC Machining',
+  'Lean', 'Six Sigma', 'SQL', 'VBA', 'Python', 'Excel', 'Minitab',
+  'Simio', 'Process Simulation', 'SolidWorks', 'CNC Machining',
   'Production Planning', 'Inventory Control', 'Engineering Project Cost Analysis',
 ]
 
